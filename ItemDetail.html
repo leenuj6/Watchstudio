@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Watch Studio">
+
+    <!-- Bootstrap Required Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Watch Studio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <style>
+        body {
+            overflow-x: hidden;
+            font-family: 'Oswald', serif;
+            padding-top: 60px;
+            overflow-x: hidden;
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+
+        }
+
+        .SPECIFICATIONS {
+            padding-left: 35%;
+        }
+
+        .navbar {
+            background-color: black;
+
+
+        }
+
+        .lead {
+            position: absolute;
+            z-index: 1;
+            top: 10%;
+
+        }
+
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+
+        }
+       
+        footer {
+            background-color: black;
+            color: white;
+            line-height: 1.5;
+            padding-left: 0px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .ft-title {
+            color: #fff;
+            font-family: 'Futura', serif;
+            font-size: 1.0rem;
+            padding-bottom: 0.625rem;
+        }
+
+
+        .ft-main {
+            padding: 1.25rem 1.875rem;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .ft-main-item {
+
+            padding: 1.25rem;
+            min-width: 12.5rem
+                /*200px*/
+            ;
+        }
+
+        @media only screen and (min-width: 29.8125rem
+
+            /*477px*/
+        ) {
+            .ft-main {
+                justify-content: space-around;
+            }
+        }
+
+        @media only screen and (min-width: 77.5rem
+
+            /*1240px*/
+        ) {
+            .ft-main {
+                justify-content: space-evenly;
+            }
+        }
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        input[type="email"] {
+            border: 0;
+            padding: 0.625rem;
+            margin-top: 0.3125rem;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border: 0;
+            padding: 0.625rem 0.9375rem;
+            margin-top: 0.3125rem;
+        }
+
+        .ft-social {
+            padding: 0 1.875rem 1.25rem;
+            height: 60px;
+        }
+
+        .ft-social-list {
+            display: flex;
+            justify-content: center;
+            border-top: 1px #777 solid;
+            padding-top: 1.25rem;
+        }
+
+        .ft-social-list li {
+            margin: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .ft-legal {
+            padding: 0.9375rem 1.875rem;
+            background-color: black;
+        }
+
+        .ft-legal-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .ft-legal-list li {
+            margin: 0.125rem 0.625rem;
+            white-space: nowrap;
+        }
+
+        /* one before the last child */
+        .ft-legal-list li:nth-last-child(2) {
+            flex: 1;
+            /* same as flex-grow: 1; */
+        }
+    </style>
+
+
+</head>
+
+
+
+<!-- Contains the heading, navigation and banner image -->
+<header>
+    <nav class="navbar fixed-top navbar-expand-lg  navbar-dark  ">
+        <div class="container">
+
+            <!-- Your Travel App Name or Logo -->
+
+            <a href="#" class="navbar-brand text-light">
+                <img src="img/logo2.png" alt="logo" style="width:40px;height:25px;"> <!-- logo image taken from https://www.pinterest.com.mx/pin/800233427528838668/  -->
+                Watch Studio
+              </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar -->
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <div class="navbar-nav ml-auto">
+
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-outline-light" type=" button"><i class="bi-search"></i></button>
+                    </form>
+
+
+                    <a class="nav-item text-light nav-link" href="#"><i class="bi-house-door"></i> Home</a>
+
+
+
+                    <div class="dropdown">
+                        <a class="nav-item text-light nav-link dropdown-toggle" data-toggle="dropdown" id="bookDropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#"> <i class="bi-bookmarks"></i></i>
+                            Categories</a>
+                        <div class="dropdown-menu" aria-labelledby="bookDropdown">
+                            <a class="dropdown-item" href="#">New Arrivals</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Women Watches</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Kids Watches</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Male Watches</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Smart Watches</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Limited Edition</a>
+                        </div>
+                    </div>
+                    <a class="nav-item text-light nav-link" href="#"><i class="bi-bag"> </i>Cart</i></a>
+                    <a class="nav-item text-light nav-link" href="#"><i class="bi-person-fill"></i> </i>Sign
+                        In</i></a>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container-flex">
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                    
+                    <div class="carousel-inner"  role="listbox">
+                      <div class="carousel-item active">
+                        <img class="d-block " src="img/watch2.webp" alt="" style="width:320px;height:400px;"><!--https://www.zamels.com.au/products/2007925-g-shock-dw5610sus-5d-box-set-->
+                      </div>
+                      
+                      <div class="carousel-item">
+                        <img class="d-block " src="img/watch2_5.webp" alt="" style="width:300px;height:400px;"><!--https://www.fashbrands.com/product.asp?itemId=4387455-->
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev " href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next " href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+                
+            </div>
+            <div class="col-sm-8">
+                <div class="lead">
+                    <h4><b>G-SHOCK Special Colours Rotary Switch</b></h4>
+                    <p2>SKU: GA400GB-1A9</p2>
+                    <p>$350.00 AUD</p>
+
+                    <h6>FEATURE OVERVIEW</h6>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <p> <i class="bi-globe"></i>Two year warranty</p>
+                        </div>
+                        <div class="col-6">
+                            <p> <i class="bi-gift"></i> G-Shock Box</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p> <i class="bi-watch"></i>Case Size:52mm</p>
+                        </div>
+                        <div class="col-6">
+                            <p> <i class="bi-person"></i> Gender Men</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <p> <i class="bi-gem"></i></i>Material:Mineral</p>
+                        </div>
+                        <div class="col-6">
+                            <p> <i class="bi-droplet"></i> Water Resistannt</p>
+                        </div>
+                    </div>
+
+
+                    <a class="btn btn-dark btn-lg" href="#" role="button">Add To Cart</a>
+
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+
+            </div>
+            <div class="col-sm-8">
+                <div class="row">
+                    <h6>SPECIFICATIONS</h6>
+                </div>
+               
+                <div class="row">
+                    Case size (L× W× H) 55 × 51.2 × 16.9 mm,Weight 72 g
+                </div>
+                <div class="row">
+                    
+                </div>
+                <div class="row">
+                    Case and bezel material Case / bezel material: Resin, Construction Shock Resistant; Magnetic Resistant
+                </div>
+                <div class="row">
+                   
+                </div>
+                <div class="row">
+                    Power supply and battery life Approx. battery life: 2 years on CR1220
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <!-- Footer main -->
+    <section class="ft-main">
+        <div class="ft-main-item">
+            <h2 class="ft-title">SHOP CATEGORIES</h2>
+            <ul>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Women Watches</a></li>
+                <li><a href="#">Kids Wacthes</a></li>
+                <li><a href="#">Male Watches</a></li>
+                <li><a href="#">Smart Watches</a></li>
+                <li><a href="#">Limited Edition</a></li>
+            </ul>
+        </div>
+        <div class="ft-main-item">
+            <h2 class="ft-title">FEATURED COLLECTIONS</h2>
+            <ul>
+                <li><a href="#">Automatic Watches</a></li>
+                <li><a href="#">Best selling Branches</a></li>
+                <li><a href="#">Casio Kids Watches</a></li>
+                <li><a href="#">Gold Watches</a></li>
+                <li><a href="#">Smart Watches</a></li>
+                <li><a href="#">Swiss Watches</a></li>
+            </ul>
+        </div>
+        <div class="ft-main-item">
+            <h2 class="ft-title">CUSTOMER CARE</h2>
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+        <div class="ft-main-item">
+            <h2 class="ft-title">INFORMATION</h2>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Customer Reviews</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="ft-main-item">
+            <h2 class="ft-title">STAY UPDATED</h2>
+            <p>Subscribe to our newsletter to get our latest news.</p>
+            <form>
+                <input type="email" name="email" placeholder="Enter email address"
+                    style="background-color:black; border: 1px white  solid;">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer social -->
+    <section class="ft-social">
+        <ul class="ft-social-list">
+            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+            <li><a href="#"><i class="bi bi-github"></i></a></li>
+            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+        </ul>
+    </section>
+
+    <!-- Footer legal -->
+    <section class="ft-legal">
+        <ul class="ft-legal-list">
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li>&copy; 2019 Copyright Nowrap Inc.</li>
+        </ul>
+    </section>
+</footer>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+
+</html>
+<!-- All the images are taken from watchdirect website and casio -->
